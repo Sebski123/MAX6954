@@ -30,7 +30,7 @@ void MAX6954::send_data(byte address, byte data){
     send_data(data);
 }
 
-void MAX6954::write_string(char str[], int col = 0)
+void MAX6954::write_string(char str[], int col /*= 0*/)
 {
   int i = 0;
   for (int digit = 0x20 + col; digit <= 0x25; digit++)
