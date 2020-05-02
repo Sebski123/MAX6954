@@ -1,15 +1,13 @@
 //#include "Arduino.h"
 #include "MAX6954.h"
 
-MAX6954::MAX6954(uint8_t mosi, uint8_t miso, uint8_t clk, uint8_t cs)
+MAX6954::MAX6954(uint8_t mosi, uint8_t clk, uint8_t cs)
 {
     data_out = mosi;
-    data_in = miso;
     clock = clk;
     chip = cs;
 
     pinMode(data_out, OUTPUT);
-    pinMode(data_in, INPUT);
     pinMode(clock, OUTPUT);
 
     pinMode(chip, OUTPUT);

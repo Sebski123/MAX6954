@@ -6,9 +6,9 @@
 class MAX6954 {
   public:
 
-    MAX6954(uint8_t out, uint8_t in, uint8_t clk, uint8_t cs);
+    MAX6954(uint8_t out, uint8_t clk, uint8_t cs);
 
-    uint8_t data_in, data_out, clock, chip;
+    uint8_t data_out, clock, chip;
 
     void begin();
     void send_data(byte address, byte data);
