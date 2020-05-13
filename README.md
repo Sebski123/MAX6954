@@ -18,11 +18,11 @@ Wiring
 
 I connected the MAX6954s to the ATmega using the following pins:
 
-| MAX6954 pin name           | MAX6954 pin nr | ATmega pin name | ATmega328 pin nr |
-|----------------------------|----------------|-----------------|------------------|
-| Chip Select (CS)           | 3              | PB0             | 14               |
-| Master Out Slave In (MOSI) | 6              | PB1             | 15               |
-| Clock (SCK)                | 5              | PB2             | 16               |
+| MAX6954 pin name           | MAX6954 pin nr | ATmega pin name | ATmega328 pin nr | Arduino pin name |
+|----------------------------|----------------|-----------------|------------------|------------------|
+| Chip Select (CS)           | 3              | PB0             | 14               | 8                |
+| Master Out Slave In (MOSI) | 6              | PB1             | 15               | 9                |
+| Clock (SCK)                | 5              | PB2             | 16               | 10               |
 
 
 To connect the MAX6954 to the 14 segment digits refer to Table 3. Connection
