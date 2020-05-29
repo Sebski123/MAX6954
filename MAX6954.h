@@ -12,6 +12,7 @@ class MAX6954 {
 
     void begin();
     void send_data(byte address, byte data);
+    void write_char(char c, int col = 0);
     void write_string(char str[], int col = 0);
     void set_global_brightness(int i);
     void clear();

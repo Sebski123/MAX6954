@@ -30,6 +30,11 @@ void MAX6954::send_data(byte address, byte data){
     send_data(data);
 }
 
+void MAX6954::write_char(char c, int col /*= 0*/)
+{
+    send_data(0x20 + col, c);
+}
+
 void MAX6954::write_string(char str[], int col /*= 0*/)
 {
   int i = 0;
@@ -121,5 +126,7 @@ void MAX6954::send_data(byte data)
 }
 
 void MAX6954::clear(){
-    write_string("      ");
+    for(int i = 0; i < 6; i++){
+        send_data(0x20 + i, ' ');
+    }
 }
