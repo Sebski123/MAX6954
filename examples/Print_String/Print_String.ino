@@ -1,10 +1,11 @@
 #include "MAX6954.h"
 
-#define CS      8   // Chip Select
-#define DATAOUT 9   // MOSI
-#define CLK     10  // SCK
+#define CS 11     // Chip Select
+#define DATAOUT 8 // MOSI
+#define CLK 9     // SCK
 
 MAX6954 chip = MAX6954(DATAOUT, CLK, CS);
+//MAX6954 chip2 = MAX6954(CS);
 
 void setup()
 {
